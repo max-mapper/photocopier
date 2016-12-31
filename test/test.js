@@ -21,12 +21,12 @@ test('setup', function (t) {
 })
 
 test('copies ARW', function (t) {
-  photoImport(from, to, function (err, results) {
+  photoImport(from, to, function (err) {
     t.ifErr(err)
-    t.ok(fs.existsSync(path.join(to, '1.ARW')))
-    t.ok(fs.existsSync(path.join(to, '2.ARW')))
-    t.ok(fs.existsSync(path.join(to, 'sub', '3.ARW')))
-    t.ok(fs.existsSync(path.join(to, 'sub', 'subsub', '4.ARW')))
+    t.ok(fs.existsSync(path.join(to, '2016', '12', '31-1.ARW')))
+    t.ok(fs.existsSync(path.join(to, '2016', '12', '31-2.ARW')))
+    t.ok(fs.existsSync(path.join(to, '2016', '12', '31-3.ARW')))
+    t.ok(fs.existsSync(path.join(to, '2016', '12', '31-4.ARW')))
     t.notOk(fs.existsSync(path.join(to, '1.txt')))
     t.end()
   })

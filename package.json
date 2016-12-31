@@ -6,6 +6,9 @@
   "scripts": {
     "test": "node test/test.js"
   },
+  "bin": {
+    "photo-import": "cli.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/maxogden/photo-import.git"
@@ -24,6 +27,7 @@
     "tape": "^4.6.3"
   },
   "dependencies": {
+    "dateformat": "^2.0.0",
     "glob": "^7.1.1",
     "mkdirp": "^0.5.1",
     "mv": "^2.1.1",
