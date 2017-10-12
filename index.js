@@ -5,7 +5,7 @@ var mv = require('mv')
 var glob = require('glob')
 var dateFormat = require('dateformat')
 var parallel = require('run-parallel-limit')
-var RAWS = ['*.ARW']
+var RAWS = ['*.ARW', '*.JPG', '*.jpg', '*.jpeg', '*.JPEG', '*.png', '*.PNG']
 
 module.exports = function (from, to, opts, cb) {
   if (typeof opts === 'function') {
